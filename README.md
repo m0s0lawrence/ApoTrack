@@ -1,5 +1,5 @@
 # ApoTrack
-## Analysis of APOBEC hairpins in coding sequences
+## Analysis of APOBEC RNA editing in hairpins in coding sequences
 
 Steps:
 
