@@ -30,5 +30,5 @@ samtools mpileup -f hg19.fa -l apotrack.sites.hg19.v1.0.bed -b bamlist.txt | pyt
 
 List of ApoTrack coding hairpin CAUC sites in hg19
 
-verson 1.0:    [apotrack.sites.hg19.v1.0.txt](apotrack.sites.hg19.v1.0.txt)   or    [apotrack.sites.hg19.v1.0.bed](apotrack.sites.hg19.v1.0.bed) 
+verson 1.0:    [apotrack.sites.hg19.v1.0.bed](apotrack.sites.hg19.v1.0.bed) 
 
