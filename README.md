@@ -7,7 +7,7 @@ Steps:
 
 2. (optional) Filter sites to remove polymorphic/noisy sites, e.g. using dbSNP or an external panel of normals.
 
-3. Get basecall counts at the hairpin sites from your RNA-Seq BAM file(s), using the ``mpileup`` command of [samtools](http://www.htslib.org/).
+3. Get counts at the hairpin sites from your RNA-Seq BAM file(s), using the ``mpileup`` command of [samtools](http://www.htslib.org/).
 
 4. Summarize counts to a total editing rate for each BAM, using our small utility [tallyedit](tallyedit.py).
 
