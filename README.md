@@ -5,11 +5,11 @@ Steps:
 
 1. Identify APOBEC hairpin sites to use, using the ``survey_hairpins_rna`` command of [ApoHP](https://github.com/alangenb/ApoHP).
 
-2. (optional) Filter sites to remove polymorphic/noisy sites, e.g. using panel of normals.
+2. (optional) Filter sites to remove polymorphic/noisy sites, e.g. using an external panel of normals.
 
-3. Get basecall counts at these sites from your BAM file(s), using the ``mpileup`` command of [samtools](http://www.htslib.org/).
+3. Get basecall counts at the hairpin sites from your BAM file(s), using the ``mpileup`` command of [samtools](http://www.htslib.org/).
 
-4. Summarize counts to a total editing rate per 1000 sites, using our small utility [tallyedit](tallyedit.py).
+4. Summarize counts to a total editing rate for each BAM, using our small utility [tallyedit](tallyedit.py).
 
 e.g.
 
