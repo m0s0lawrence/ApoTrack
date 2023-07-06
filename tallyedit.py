@@ -40,10 +40,9 @@ if __name__ == "__main__":
         print("Error: All reference bases are 'N'. Did you forget to include the reference FASTA in the samtools mpileup command?", file=sys.stderr)
         sys.exit(1)
         
-    print(f"Editing rate per 1000")
     for i in range(bam_count):
-        edit_rate = total_edits[i] / total_basecalls[i] if total_basecalls[i] != 0 else 0
-        print(f"{edit_rate * 1000:.2f}")
+        edit_rate = total_edits[i] / total_basecalls[i] if total_basecalls[i] > 0 else -1
+        print(f"bam {i+1} editing rate per 1000 = {edit_rate * 1000:.2f}")
 
 
         
