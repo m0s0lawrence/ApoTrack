@@ -10,11 +10,12 @@ def parse_mpileup_line(line):
 
     for i in range(bam_count):
         basecalls = split_line[4 + i * 3].upper()
-        for basecall in basecalls:
-            if basecall in {'.', ',', 'A', 'T', 'G', 'C'}:
-                total_basecalls[i] += 1
-                if (ref_base == 'C' and basecall == 'T') or (ref_base == 'G' and basecall == 'A'):
-                    total_edits[i] += 1
+        if ref_base in {'C', 'G'}:
+            for basecall in basecalls:
+                if basecall in {'.', ',', 'A', 'T', 'G', 'C'}:
+                    total_basecalls[i] += 1
+                    if (ref_base == 'C' and basecall == 'T') or (ref_base == 'G' and basecall == 'A'):
+                        total_edits[i] += 1
 
     return ref_base, total_edits, total_basecalls
 
