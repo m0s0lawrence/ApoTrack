@@ -29,14 +29,14 @@ e.g.
 single-bam mode
 
 ```
-samtools mpileup -f hg19.fa -l apotrack.sites.hg19.v1.0.bed mysample.bam | python3 tallyedit.py
+samtools mpileup -f hg19.fa -l apotrack.sites.hg19.v1.0.bed --max-depth=5000 mysample.bam | python3 tallyedit.py
 ```
 
 
 multi-bam mode
 
 ```
-samtools mpileup -f hg19.fa -l apotrack.sites.hg19.v1.0.bed -b bamlist.txt | python3 tallyedit.py
+samtools mpileup -f hg19.fa -l apotrack.sites.hg19.v1.0.bed --max-depth=5000 -b bamlist.txt | python3 tallyedit.py
 ```
 
 
